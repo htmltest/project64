@@ -174,6 +174,16 @@ $(document).ready(function() {
 
     $('.nav-main-link').click(function(e) {
         $('html').toggleClass('nav-main-open');
+        if ($('html').hasClass('nav-main-open')) {
+            var dpr = 1;
+            if (window.devicePixelRatio !== undefined) {
+                dpr = window.devicePixelRatio;
+            }
+
+            $('body').height($(window).height() * dpr);
+        } else {
+            $('body').removeAttr('style');
+        }
         e.preventDefault();
     });
 
@@ -205,6 +215,16 @@ $(document).ready(function() {
 
     $('.side-mobile-link').click(function(e) {
         $('html').toggleClass('side-mobile-visible');
+        if ($('html').hasClass('side-mobile-visible')) {
+            var dpr = 1;
+            if (window.devicePixelRatio !== undefined) {
+                dpr = window.devicePixelRatio;
+            }
+
+            $('body').height($(window).height() * dpr);
+        } else {
+            $('body').removeAttr('style');
+        }
         e.preventDefault();
     });
 
