@@ -1073,16 +1073,18 @@ h1+.catalogue-ctrl .catalogue-sort {margin-top:-60px}
 .main-section-1 .main-section-photo {position:absolute; right:34px; bottom:0; line-height:0; z-index:3}
 .main-section-2 .main-section-photo {position:absolute; left:30px; top:15px; line-height:0}
 .main-section-3 .main-section-photo {line-height:0; text-align:center; height:228px}
+.main-section-3 .main-section-photo a {display:block; position:relative; padding:1px 0 0 0}
 .main-section-4 .main-section-photo {line-height:0; text-align:center; height:167px}
+.main-section-4 .main-section-photo a {display:block; position:relative; padding:1px 0 0 0}
 .main-section-title {font-size:20px; line-height:25px; font-weight:bold; text-transform:uppercase; position:relative}
 .main-section-title:after {content:""; display:block; width:70px; height:1px; background:#000; margin:17px 0 0 0}
 .main-section-other .main-section-title:after {background:#fff}
-.main-section-1 .main-section-title {padding:227px 0 0 0; z-index:4}
-.main-section-2 .main-section-title {padding:593px 0 0 0}
+.main-section-1 .main-section-title {float:left; margin:227px 0 0 0; width:50%; z-index:4}
+.main-section-2 .main-section-title {float:left; margin:593px 0 0 0}
 .main-section-title a {color:#000}
 .main-section-title a:hover {color:#f02a2a}
 .main-section-other .main-section-title a {color:#fff}
-.main-section-list {position:relative; color:#777; padding:18px 0 0 0}
+.main-section-list {float:left; clear:left; position:relative; color:#777; padding:18px 0 0 0}
 .main-section-1 .main-section-list {width:50%; z-index:4}
 .main-section-list a {color:#777}
 .main-section-list a:hover {color:#f02a2a}
@@ -1096,10 +1098,10 @@ h1+.catalogue-ctrl .catalogue-sort {margin-top:-60px}
     .main-section-photo img:nth-child(2) {display:inline-block}
     .main-section-1 {width:100%}
     .main-section-1 .main-section-inner {height:240px}
-    .main-section-1 .main-section-title {padding:117px 0 0 0}
+    .main-section-1 .main-section-title {margin:117px 0 0 0}
     .main-section-2 {width:50%; float:right}
     .main-section-2 .main-section-inner {height:690px}
-    .main-section-2 .main-section-title {padding:568px 0 0 0}
+    .main-section-2 .main-section-title {margin:568px 0 0 0}
     .main-section-2 .main-section-photo {left:50%; top:94px; margin-left:-134px}
     .main-section-3 {width:50%; margin-top:0}
     .main-section-3 .main-section-inner {height:340px}
@@ -1121,22 +1123,22 @@ h1+.catalogue-ctrl .catalogue-sort {margin-top:-60px}
     .main-sections {margin-left:20px; margin-right:20px; margin-bottom:74px}
     .main-section-photo img:nth-child(2) {display:none}
     .main-section-photo img:nth-child(3) {display:inline-block}
-    .main-section-1 .main-section-title {padding:57px 0 0 0}
+    .main-section-1 .main-section-title {margin:57px 0 0 0}
     .main-section-1 .main-section-photo {right:0}
     .main-section-2 {float:left; width:100%; text-align:center}
     .main-section-2 .main-section-inner {height:400px}
-    .main-section-2 .main-section-title {padding:279px 0 0 0}
+    .main-section-2 .main-section-title {margin:279px 0 0 0}
     .main-section-2 .main-section-title:after {margin-left:auto; margin-right:auto}
     .main-section-2 .main-section-photo {left:0; top:0; width:100%; margin-left:0; text-align:center}
     .main-section-3 {width:100%; margin-top:410px}
     .main-section-3 .main-section-inner {height:240px}
     .main-section-3 .main-section-photo {position:absolute; right:0; top:0}
-    .main-section-3 .main-section-title {padding:57px 0 0 0}
+    .main-section-3 .main-section-title {padding:57px 0 0 0; width:50%}
     .main-section-3 .main-section-list {width:50%}
     .main-section-3+.main-section-3 {margin-top:-660px; text-align:center}
     .main-section-3+.main-section-3 .main-section-inner {height:400px}
     .main-section-3+.main-section-3 .main-section-photo {position:relative; right:auto; top:auto; height:278px}
-    .main-section-3+.main-section-3 .main-section-title {padding:0}
+    .main-section-3+.main-section-3 .main-section-title {padding:0; width:auto}
     .main-section-3+.main-section-3 .main-section-title:after {margin-left:auto; margin-right:auto}
     .main-section-3+.main-section-3 .main-section-list {width:auto}
     .main-section-4 {width:50%}
