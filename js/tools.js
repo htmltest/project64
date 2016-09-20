@@ -260,6 +260,11 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.catalogue-menu li a.catalogue-menu-sublink').click(function(e) {
+        $(this).parent().toggleClass('open');
+        e.preventDefault();
+    });
+
 });
 
 $(window).on('resize', function() {
