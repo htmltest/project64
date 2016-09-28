@@ -309,6 +309,12 @@
 
                 <div class="nav-search">
                     <a href="#" class="nav-search-link"></a>
+                    <div class="nav-search-form">
+                        <form action="#" method="post">
+                            <div class="nav-search-input"><input type="text" name="search" value="" placeholder="Поиск по сайту" /></div>
+                            <div class="nav-search-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -484,7 +490,27 @@
                             <div class="footer-menu-title"><a href="#">Контакты</a></div>
                             <div class="footer-contacts-phone">
                                 <div class="footer-contacts-phone-text">+7 (495) 789-4-234</div>
-                                <a href="#" class="btn-2">обратная связь</a>
+                                <div class="footer-callback">
+                                    <a href="#" class="btn-2 footer-callback-link">обратная связь</a>
+                                    <div class="footer-callback-window">
+                                        <form action="#" method="post">
+                                            <div class="form-row">
+                                                <div class="form-label">Ваше имя</div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="name" value="" placeholder="" class="required" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-label">Ваш телефон</div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" placeholder="+7 (___) ___-__-__" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-submit"><input type="submit" value="отправить" class="btn-2" /></div>
+                                        </form>
+                                    </div>
+                                    <a href="#" class="footer-callback-window-close"></a>
+                                </div>
                             </div>
                             <div class="footer-contacts-schedule">Время работы бутиков: с 10:00 до 22:00 (без выходных)</div>
                             <ul class="footer-contacts-metro">

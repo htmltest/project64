@@ -309,6 +309,12 @@
 
                 <div class="nav-search">
                     <a href="#" class="nav-search-link"></a>
+                    <div class="nav-search-form">
+                        <form action="#" method="post">
+                            <div class="nav-search-input"><input type="text" name="search" value="" placeholder="Поиск по сайту" /></div>
+                            <div class="nav-search-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -542,11 +548,15 @@
                                                 '$[properties.balloonContent]'
                                             );
 
+                                            var placemarkList = [];
+                                            var i = 0;
+
                                             $('.product-shops-item').each(function() {
                                                 var curItem = $(this);
                                                 var curIndex = $('.product-shops-item').index(curItem);
                                                 var myPlacemark = new ymaps.Placemark([curItem.data('coord1'), curItem.data('coord2')], {
                                                     hintContent: curItem.data('title'),
+                                                    balloonID: i,
                                                     balloonContent: curItem.html()
                                                 }, {
                                                     balloonShadow: false,
@@ -560,11 +570,29 @@
                                                     iconImageSize: [60, 80],
                                                     iconImageOffset: [-30, -80]
                                                 });
+                                                myPlacemark.events.add('balloonopen', function(e) {
+                                                    var curPlacemark = e.get('target');
+                                                    myMap.setCenter(curPlacemark.geometry.getCoordinates(), 10, {duration: 300});
+                                                    $('.product-shops-item.open').removeClass('open');
+                                                    $('.product-shops-item').eq(curPlacemark.properties.get('balloonID')).addClass('open');
+                                                });
+                                                myPlacemark.events.add('balloonclose', function(e) {
+                                                    var curPlacemark = e.get('target');
+                                                    $('.product-shops-item').eq(curPlacemark.properties.get('balloonID')).removeClass('open');
+                                                });
+                                                placemarkList.push(myPlacemark);
+                                                i++;
                                                 myMap.geoObjects.add(myPlacemark);
+                                            });
+
+                                            $('.product-shops-item').click(function() {
+                                                myMap.setCenter([$(this).data('coord1'), $(this).data('coord2')], 10, {duration: 300});
+                                                var curIndex = $('.product-shops-item').index($(this));
+                                                placemarkList[curIndex].balloon.open();
                                             });
                                         }
                                     </script>
-                                    </div>
+                                </div>
                                 <!-- contacts map END -->
 
                             </div>
@@ -611,7 +639,27 @@
                             <div class="footer-menu-title"><a href="#">Контакты</a></div>
                             <div class="footer-contacts-phone">
                                 <div class="footer-contacts-phone-text">+7 (495) 789-4-234</div>
-                                <a href="#" class="btn-2">обратная связь</a>
+                                <div class="footer-callback">
+                                    <a href="#" class="btn-2 footer-callback-link">обратная связь</a>
+                                    <div class="footer-callback-window">
+                                        <form action="#" method="post">
+                                            <div class="form-row">
+                                                <div class="form-label">Ваше имя</div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="name" value="" placeholder="" class="required" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-label">Ваш телефон</div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" placeholder="+7 (___) ___-__-__" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-submit"><input type="submit" value="отправить" class="btn-2" /></div>
+                                        </form>
+                                    </div>
+                                    <a href="#" class="footer-callback-window-close"></a>
+                                </div>
                             </div>
                             <div class="footer-contacts-schedule">Время работы бутиков: с 10:00 до 22:00 (без выходных)</div>
                             <ul class="footer-contacts-metro">
