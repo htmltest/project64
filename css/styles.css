@@ -1453,6 +1453,12 @@ h1+.catalogue-ctrl .catalogue-sort {margin-top:-60px}
 .info-block-title {font-weight:500; font-size:15px; line-height:20px; text-transform:uppercase; color:#000}
 .info-block-text {font-weight:100; font-size:14px; line-height:20px; text-transform:none; color:#000; padding:11px 0 0 0}
 
+@media (max-width:1199px) {
+    .info-block-content {left:-96px; top:35px; width:308px}
+    .info-block-content:before {width:100%; height:35px; left:0; top:-35px}
+    .info-block-content:after {width:23px; height:13px; left:95px; top:-13px; background:url(../images/info-block-arrow-tablet.png)}
+}
+
 .checkout-order {float:left; width:50%; padding:0 15px 0 0; box-sizing:border-box}
 
 @media (max-width:1199px) {
@@ -1750,7 +1756,7 @@ footer a:hover {text-decoration:none}
 }
 
 .select-shops {width:1110px; padding:0 29px 29px 29px}
-.select-shops+.window-close {right:29px}
+.select-shops+.window-close {right:29px; top:30px}
 .select-shops h2 {margin:30px 0}
 .select-shops .contacts-list {max-height:420px}
 .select-shops .contacts-map #map {max-height:420px}
@@ -1759,12 +1765,9 @@ footer a:hover {text-decoration:none}
 .select-shops .contacts-list .product-shops-item {padding:15px}
 
 @media (max-width:1199px) {
-    .select-shops {width:648px}
-}
-
-@media (max-width:767px) {
-    .select-shops {width:420px}
-    .select-shops .contacts-item-inner-text {margin:0 0 0 45px}
+    .select-shops {width:370px}
+    .select-shops .contacts-item-inner-photo {display:none}
+    .select-shops .contacts-item-inner-text {margin:0 19px 0 45px}
 }
 
 .product-shops-item input {display:none}
@@ -1773,3 +1776,7 @@ footer a:hover {text-decoration:none}
 .product-shops-item input:checked+.contacts-item-inner:before {background:#ed1c24 url(../images/checkbox.png) no-repeat center; border-color:#ed1c24}
 
 .select-shops .btn-2 {width:290px; margin:20px 0 0 0; font-size:15px; line-height:40px; height:40px}
+
+@media (max-width:1199px) {
+    .select-shops .btn-2 {width:100%; line-height:50px; height:50px}
+}
