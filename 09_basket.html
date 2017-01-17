@@ -331,276 +331,59 @@
                 <div class="content">
                     <div class="content-wrap">
 
-                        <div class="checkout-header">
-                            <h1>Оформление заказа</h1>
-                            <a href="#">Я уже покупал</a>
-                        </div>
+                        <h1>Моя корзина</h1>
 
-                        <!-- checkout -->
-                        <div class="checkout">
+                        <!-- basket -->
+                        <div class="basket">
                             <form action="#" method="post">
 
-                                <!-- checkout order -->
-                                <div class="checkout-order">
-
-                                    <!-- checkout form -->
-                                    <div class="checkout-form">
-                                        <div class="form-row">
-                                            <div class="form-label">Имя</div>
-                                            <div class="form-field">
-                                                <div class="form-input"><input type="text" name="name" value="Василий Петров" class="required" /></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="cols cols-2">
-                                            <div class="col">
-                                                <div class="form-row">
-                                                    <div class="form-label">E-mail</div>
-                                                    <div class="form-field">
-                                                        <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
-                                                        <div class="form-checkbox"><label><input type="checkbox" name="subscribe" checked="checked" class="required" /><span></span>Подписаться на новости и скидки</label></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-row">
-                                                    <div class="form-label">Ваш телефон</div>
-                                                    <div class="form-field">
-                                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row order-comment-link">
-                                            <div class="form-field">+&nbsp; <a href="#">Добавить комментарий к заказу</a></div>
-                                        </div>
-
-                                        <div class="form-row order-comment">
-                                            <div class="form-label">Комментарий к&nbsp;заказу</div>
-                                            <div class="form-field">
-                                                <div class="form-input"><textarea name="comment" rows="5" cols="10"></textarea></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="order-params">
-                                            <div class="cols cols-2">
-                                                <div class="col">
-                                                    <div class="form-row">
-                                                        <div class="form-label">Адрес и&nbsp;способ доставки</div>
-                                                        <div class="form-field">
-                                                            <div class="order-tabs">
-                                                                <div class="order-tabs-menu">
-                                                                    <div class="order-tabs-menu-item">
-                                                                        <label><input type="radio" name="delivery" value="1" checked="checked" /><span><em>Самовывоз<br />из магазина</em></span></label>
-                                                                    </div>
-                                                                    <div class="order-tabs-menu-item">
-                                                                        <label><input type="radio" name="delivery" value="2" /><span><em>Доставка<br />курьером</em></span></label>
-                                                                    </div>
-                                                                    <div class="order-tabs-menu-item">
-                                                                        <label><input type="radio" name="delivery" value="3" /><span><em>Доставка<br />почтой</em></span></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="order-tab active">
-                                                                    <div class="selected-shop">
-                                                                        <div class="selected-shop-title">Выбран магазин <span>на Пражской</span>:</div>
-                                                                        <div class="selected-shop-address">Метро Пражская, ул. Кировоградская, д. 13а,<br />ТРЦ Columbus, 1 этаж</div>
-                                                                        <div class="selected-shop-link"><a href="windows/select.html">Выбрать другой</a><input type="hidden" name="selectedShop" value="2" /></div>
-                                                                    </div>
-                                                                    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-                                                                    <script>
-                                                                        var myMap;
-
-                                                                        function init() {
-                                                                            myMap = new ymaps.Map('map', {
-                                                                                center: [55.755768, 37.617671],
-                                                                                zoom: 10,
-                                                                                controls: []
-                                                                            });
-
-                                                                            myMap.controls.add('zoomControl');
-                                                                            myMap.behaviors.disable('scrollZoom');
-
-                                                                            var placemarkList = [];
-                                                                            var i = 0;
-
-                                                                            var curID = $('input[name="selectedShop"]').val();
-                                                                            $('.select-shops .contacts-list input[value="' + curID + '"]').parents().filter('.product-shops-item').click();
-                                                                            $('.product-shops-item').each(function() {
-                                                                                var curItem = $(this);
-                                                                                var curIndex = $('.product-shops-item').index(curItem);
-                                                                                var myPlacemark = new ymaps.Placemark([curItem.data('coord1'), curItem.data('coord2')], {
-                                                                                    hintContent: curItem.data('title'),
-                                                                                    balloonId: curIndex
-                                                                                }, {
-                                                                                    iconLayout: 'default#image',
-                                                                                    iconImageHref: 'images/map-icon-4.png',
-                                                                                    iconImageSize: [60, 80],
-                                                                                    iconImageOffset: [-30, -80]
-                                                                                });
-                                                                                myPlacemark.events.add('click', function(e) {
-                                                                                    var curPlacemark = e.get('target');
-                                                                                    $('.product-shops-item.open').removeClass('open');
-                                                                                    $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).addClass('open');
-                                                                                    $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).find('input').prop('checked', true);
-                                                                                    for (var j = 0; j < placemarkList.length; j++) {
-                                                                                        placemarkList[j].options.set('iconImageHref', 'images/map-icon-4.png');
-                                                                                    }
-                                                                                    curPlacemark.options.set('iconImageHref', 'images/map-icon.png');
-                                                                                    myMap.setCenter(curPlacemark.geometry.getCoordinates(), 10, {duration: 300});
-                                                                                });
-                                                                                placemarkList.push(myPlacemark);
-                                                                                i++;
-                                                                                myMap.geoObjects.add(myPlacemark);
-                                                                                if (curItem.hasClass('open')) {
-                                                                                    myMap.setCenter([curItem.data('coord1'), curItem.data('coord2')], 10, {duration: 300});
-                                                                                    myPlacemark.options.set('iconImageHref', 'images/map-icon.png');
-                                                                                }
-                                                                            });
-
-                                                                            $('.product-shops-item').click(function() {
-                                                                                myMap.setCenter([$(this).data('coord1'), $(this).data('coord2')], 10, {duration: 300});
-                                                                                var curIndex = $('.product-shops-item').index($(this));
-                                                                                for (var j = 0; j < placemarkList.length; j++) {
-                                                                                    placemarkList[j].options.set('iconImageHref', 'images/map-icon-4.png');
-                                                                                }
-                                                                                placemarkList[curIndex].options.set('iconImageHref', 'images/map-icon.png');
-                                                                            });
-                                                                        }
-                                                                    </script>
-                                                                </div>
-                                                                <div class="order-tab">
-                                                                    <strong>Доставка курьером</strong> до квартиры
-                                                                </div>
-                                                                <div class="order-tab">
-                                                                    <strong>Доставка почтой</strong> до ближайшего отделения
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="form-row">
-                                                        <div class="form-label">Способ оплаты</div>
-                                                        <div class="form-field">
-                                                            <div class="order-tabs">
-                                                                <div class="order-tabs-menu">
-                                                                    <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                        <label><input type="radio" name="payment" value="1" checked="checked" /><span><em><img src="images/payment-1.png" alt="" width="69" height="41" />Яндекс.<br />Деньги</em></span></label>
-                                                                    </div>
-                                                                    <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                        <label><input type="radio" name="payment" value="2" /><span><em><img src="images/payment-2.png" alt="" width="69" height="41" />Банковские<br />карты</em></span></label>
-                                                                    </div>
-                                                                    <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                        <label><input type="radio" name="payment" value="3" /><span><em><img src="images/payment-3.png" alt="" width="69" height="41" />Наличные<br />курьеру</em></span></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="order-tab active">
-                                                                    <strong>Яндекс.деньги</strong><br />Оплата производится с помощью системы Яндекс.Деньги и средства будут сняты с вашего кошелька
-                                                                </div>
-                                                                <div class="order-tab">
-                                                                    <strong>Банковские карты</strong><br />Оплата производится с помощью банковской карты и средства будут сняты с вашей карты
-                                                                </div>
-                                                                <div class="order-tab">
-                                                                    <strong>Наличные курьеру</strong><br />при передаче товара
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                <!-- basket row -->
+                                <div class="basket-row">
+                                    <div class="basket-photo"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
+                                    <div class="basket-text">
+                                        <div class="basket-title"><a href="#">Серьги длинные из серебра</a></div>
+                                        <div class="basket-art">SE12261B</div>
                                     </div>
-                                    <!-- checkout form END -->
-
-                                    <!-- checkout fast -->
-                                    <div class="checkout-fast">
-                                        <div class="checkout-fast-text">
-                                            <div class="checkout-fast-title">Некогда заполнять форму?</div>
-                                            <div class="checkout-fast-descr">Оставьте телефон и менеджер уточнит все детали!</div>
+                                    <div class="basket-row-count">
+                                        <div class="form-input">
+                                            <input type="text" name="count[]" value="1" step="1" min="1" />
+                                            <a class="plus" href="#"></a>
+                                            <a class="minus" href="#"></a>
                                         </div>
-
-                                        <div class="checkout-fast-link"><a href="windows/fast.html" class="btn-1 window-link">Быстрый заказ</a></div>
                                     </div>
-                                    <!-- checkout fast END -->
+                                    <div class="basket-row-price"><span>5 200</span> &#8381;</div>
+                                    <div class="basket-delete"><a href="#"></a></div>
                                 </div>
-                                <!-- checkout order END -->
+                                <!-- basket row END -->
 
-                                <!-- checkout cart -->
-                                <div class="checkout-cart">
-                                    <!-- checkout cart content -->
-                                    <div class="checkout-cart-content">
-
-                                        <div class="bx-soa-coupon">
-                                            <div class="bx-soa-coupon-label">
-                                                <label>Купон</label>
-                                                <div class="info-block">
-                                                    <div class="info-link">?</div>
-                                                    <div class="info-block-content">
-                                                        <div class="info-block-title">Ваш подарок</div>
-                                                        <div class="info-block-text">Оплата производится наличными средствами, а также безналичным платежом в магазине или на сайте.<br />При оплате наличными водитель- экспедитор получает деньги и выдает чек и накладную после принятия вами заказа.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="bx-soa-coupon-text">Если у вас есть промокод, введите его ниже и&nbsp;узнайте свою скидку</div>
-                                            <div class="bx-soa-coupon-block">
-                                                <div class="bx-soa-coupon-input"><input id="coupon" class="form-control bx-ios-fix" type="text"></div>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- basket results -->
-                                        <div class="basket-results">
-                                            <div class="basket-gift">
-                                                <div class="basket-gift-title">Ваш подарок
-                                                    <div class="info-block">
-                                                        <div class="info-link">?</div>
-                                                        <div class="info-block-content">
-                                                            <div class="info-block-title">Ваш подарок</div>
-                                                            <div class="info-block-text">Оплата производится наличными средствами, а также безналичным платежом в магазине или на сайте.<br />При оплате наличными водитель- экспедитор получает деньги и выдает чек и накладную после принятия вами заказа.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="basket-gift-value">Серьги длинные со снегирями</div>
-                                            </div>
-
-                                            <div class="basket-info">
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Стоимость товаров</div>
-                                                    <div class="basket-info-discount"></div>
-                                                    <div class="basket-info-value">20 200 &#8381;</div>
-                                                </div>
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Доставка</div>
-                                                    <div class="basket-info-discount"></div>
-                                                    <div class="basket-info-value">500 &#8381;</div>
-                                                </div>
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Скидка</div>
-                                                    <div class="basket-info-discount">10%</div>
-                                                    <div class="basket-info-value">-2 020 &#8381;</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="basket-summ">
-                                                <div class="basket-summ-title">К оплате</div>
-                                                <div class="basket-summ-value"><span>18 680</span> &#8381;</div>
-                                            </div>
-
-                                            <div class="form-submit order-confirm"><input type="submit" class="btn-2" value="Подтвердить заказ" /></div>
-                                        </div>
-                                        <!-- basket results END -->
-
+                                <!-- basket row -->
+                                <div class="basket-row">
+                                    <div class="basket-photo"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
+                                    <div class="basket-text">
+                                        <div class="basket-title"><a href="#">Кольцо с бриллиантом на заказ</a></div>
+                                        <div class="basket-art">SN02538</div>
+                                        <div class="basket-size">Размер 17,5</div>
                                     </div>
-                                    <!-- checkout cart content END -->
-
+                                    <div class="basket-row-count">
+                                        <div class="form-input">
+                                            <input type="text" name="count[]" value="1" step="1" min="1" />
+                                            <a class="plus" href="#"></a>
+                                            <a class="minus" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="basket-row-price"><span>15 200</span> &#8381;</div>
+                                    <div class="basket-delete"><a href="#"></a></div>
                                 </div>
-                                <!-- checkout cart END -->
+                                <!-- basket row END -->
+
+                                <div class="basket-ctrl">
+                                    <div class="form-submit"><input type="submit" value="Оформить заказ" class="btn-2" /></div>
+                                    <div class="basket-ctrl-summ"><strong>Итого: 17 140</strong> &#8381;</div>
+                                </div>
+
                             </form>
-
                         </div>
-                        <!-- checkout END -->
+                        <!-- basket END -->
 
                     </div>
                 </div>
