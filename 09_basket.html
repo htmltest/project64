@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>ARBATA</title>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&amp;text=₽" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
@@ -167,16 +168,16 @@
                                         <div class="submenu-filter">
                                             <div class="submenu-filter-title">Цена</div>
                                             <ul>
-                                                <li><a href="#">до 2 500 &#8381;</a></li>
-                                                <li><a href="#">2 500 - 5 000 &#8381;</a></li>
-                                                <li><a href="#">5 000 - 10 000 &#8381;</a></li>
-                                                <li><a href="#">от 10 000 &#8381;</a></li>
+                                                <li><a href="#">до 2 500 <span>&#8381;</span></a></li>
+                                                <li><a href="#">2 500 - 5 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">5 000 - 10 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">от 10 000 <span>&#8381;</span></a></li>
                                             </ul>
                                         </div>
 
                                         <div class="submenu-hit">
                                             <div class="submenu-hit-photo"><a href="#"><img src="files/submenu.jpg" alt="" /></a></div>
-                                            <div class="submenu-hit-price">от 5200 &#8381;</div>
+                                            <div class="submenu-hit-price">от 5200 <span>&#8381;</span></div>
                                         </div>
                                     </div>
                                     <div class="nav-main-show-all"><a href="#">Смотреть все серьги</a></div>
@@ -229,16 +230,16 @@
                                         <div class="submenu-filter">
                                             <div class="submenu-filter-title">Цена</div>
                                             <ul>
-                                                <li><a href="#">до 2 500 &#8381;</a></li>
-                                                <li><a href="#">2 500 - 5 000 &#8381;</a></li>
-                                                <li><a href="#">5 000 - 10 000 &#8381;</a></li>
-                                                <li><a href="#">от 10 000 &#8381;</a></li>
+                                                <li><a href="#">до 2 500 <span>&#8381;</span></a></li>
+                                                <li><a href="#">2 500 - 5 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">5 000 - 10 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">от 10 000 <span>&#8381;</span></a></li>
                                             </ul>
                                         </div>
 
                                         <div class="submenu-hit">
                                             <div class="submenu-hit-photo"><a href="#"><img src="files/submenu.jpg" alt="" /></a></div>
-                                            <div class="submenu-hit-price">от 5200 &#8381;</div>
+                                            <div class="submenu-hit-price">от 5200 <span>&#8381;</span></div>
                                         </div>
                                     </div>
                                     <div class="nav-main-show-all"><a href="#">Смотреть все кольца</a></div>
@@ -253,10 +254,10 @@
                                         <div class="submenu-filter">
                                             <div class="submenu-filter-title">Цена</div>
                                             <ul>
-                                                <li><a href="#">до 2 500 &#8381;</a></li>
-                                                <li><a href="#">2 500 - 5 000 &#8381;</a></li>
-                                                <li><a href="#">5 000 - 10 000 &#8381;</a></li>
-                                                <li><a href="#">от 10 000 &#8381;</a></li>
+                                                <li><a href="#">до 2 500 <span>&#8381;</span></a></li>
+                                                <li><a href="#">2 500 - 5 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">5 000 - 10 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">от 10 000 <span>&#8381;</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -284,16 +285,16 @@
                                         <div class="submenu-filter">
                                             <div class="submenu-filter-title">Цена</div>
                                             <ul>
-                                                <li><a href="#">до 2 500 &#8381;</a></li>
-                                                <li><a href="#">2 500 - 5 000 &#8381;</a></li>
-                                                <li><a href="#">5 000 - 10 000 &#8381;</a></li>
-                                                <li><a href="#">от 10 000 &#8381;</a></li>
+                                                <li><a href="#">до 2 500 <span>&#8381;</span></a></li>
+                                                <li><a href="#">2 500 - 5 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">5 000 - 10 000 <span>&#8381;</span></a></li>
+                                                <li><a href="#">от 10 000 <span>&#8381;</span></a></li>
                                             </ul>
                                         </div>
 
                                         <div class="submenu-hit submenu-hit-2">
                                             <div class="submenu-hit-photo"><a href="#"><img src="files/submenu-2.jpg" alt="" /></a></div>
-                                            <div class="submenu-hit-price">от 5200 &#8381;</div>
+                                            <div class="submenu-hit-price">от 5200 <span>&#8381;</span></div>
                                         </div>
                                     </div>
                                     <div class="nav-main-show-all"><a href="#">Смотреть все украшения</a></div>
@@ -333,57 +334,207 @@
 
                         <h1>Моя корзина</h1>
 
-                        <!-- basket -->
-                        <div class="basket">
-                            <form action="#" method="post">
+                        <div class="bx_ordercart bx_green">
+                            <div class="bx_sort_container">
+                                <span>Товары в корзине:</span>
+                                <a href="javascript:void(0)" id="basket_toolbar_button" class="current" onclick="showBasketItemsList()">Готовые к заказу<div id="normal_count" class="flat" style="display:none">&nbsp;(2)</div></a>
+                                <a href="javascript:void(0)" id="basket_toolbar_button_delayed" onclick="showBasketItemsList(2)" style="display:none;">Отложенные<div id="delay_count" class="flat">&nbsp;(0)</div></a>
+                                <a href="javascript:void(0)" id="basket_toolbar_button_subscribed" onclick="showBasketItemsList(3)" style="display:none;">Ожидаемые<div id="subscribe_count" class="flat">&nbsp;(0)</div></a>
+                                <a href="javascript:void(0)" id="basket_toolbar_button_not_available" onclick="showBasketItemsList(4)" style="display:none;">Отсутствуют<div id="not_available_count" class="flat">&nbsp;(0)</div></a>
+                            </div>
 
-                                <!-- basket row -->
-                                <div class="basket-row">
-                                    <div class="basket-photo"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
-                                    <div class="basket-text">
-                                        <div class="basket-title"><a href="#">Серьги длинные из серебра</a></div>
-                                        <div class="basket-art">SE12261B</div>
-                                    </div>
-                                    <div class="basket-row-count">
-                                        <div class="form-input">
-                                            <input type="text" name="count[]" value="1" step="1" min="1" />
-                                            <a class="plus" href="#"></a>
-                                            <a class="minus" href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="basket-row-price"><span>5 200</span> &#8381;</div>
-                                    <div class="basket-delete"><a href="#"></a></div>
+                            <div id="basket_items_list">
+                                <div class="bx_ordercart_order_table_container">
+                                    <table id="basket_items">
+                                        <thead>
+                                            <tr>
+                                                <td class="margin"></td>
+                                                <td class="item" colspan="2" id="col_NAME">Товары</td>
+                                                <td class="custom" id="col_DISCOUNT">Скидка</td>
+                                                <td class="price" id="col_PRICE">Цена</td>
+                                                <td class="custom" id="col_QUANTITY">Количество</td>
+                                                <td class="custom" id="col_SUM">Сумма</td>
+                                                <td class="custom"></td>
+                                                <td class="margin"></td>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr id="86">
+                                                <td class="margin"></td>
+                                                <td class="itemphoto">
+                                                    <div class="bx_ordercart_photo_container">
+                                                        <a href="#"><div class="bx_ordercart_photo" style="background-image:url(files/basket-1-new.jpg)"></div></a>
+                                                    </div>
+                                                </td>
+                                                <td class="item">
+                                                    <h2 class="bx_ordercart_itemtitle"><a href="#">Серьги длинные из серебра</a></h2>
+                                                    <div class="bx_ordercart_itemart">SE12261b</div>
+                                                    <div class="bx_item_detail_scu_small_noadaptive">
+                                                        <span class="bx_item_section_name_gray">Цвет</span>
+                                                        <div class="bx_scu_scroller_container">
+                                                            <div class="bx_scu">
+                                                                <ul id="prop_COLOR_REF_86" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                    <li style="width:10%;" class="sku_prop bx_active" data-value-id="black" data-element="86" data-property="COLOR_REF">
+                                                                        <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-1.png)"></span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bx_slide_left" onclick="leftScroll('COLOR_REF', 86, 1);"></div>
+                                                            <div class="bx_slide_right" onclick="rightScroll('COLOR_REF', 86, 1);"></div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="custom">
+                                                    <span>Количество:</span>
+                                                    <div class="centered">
+                                                        <table class="counter" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input size="3" id="QUANTITY_INPUT_86" name="QUANTITY_INPUT_86" maxlength="18" min="0" max="100" step="0" style="max-width: 50px" value="1" onchange="updateQuantity('QUANTITY_INPUT_86', '86', 0, false)" type="text">
+                                                                    </td>
+                                                                    <td id="basket_quantity_control">
+                                                                        <div class="basket_quantity_control">
+                                                                            <a href="javascript:void(0);" class="plus" onclick="setQuantity(86, 1, 'up', false);"></a>
+                                                                            <a href="javascript:void(0);" class="minus" onclick="setQuantity(86, 1, 'down', false);"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="text-align: left">шт</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <input id="QUANTITY_86" name="QUANTITY_86" value="1" type="hidden">
+                                                </td>
+                                                <td class="custom">
+                                                    <span>Сумма:</span>
+                                                    <div id="sum_86">5 200 <span>&#8381;</span></div>
+                                                </td>
+                                                <td class="control">
+                                                    <a href="/personal/cart/?basketAction=delete&amp;id=86">Удалить</a><br>
+                                                    <a href="/personal/cart/?basketAction=delay&amp;id=86">Отложить</a>
+                                                </td>
+                                                <td class="margin"></td>
+                                            </tr>
+
+                                            <tr id="88">
+                                                <td class="margin"></td>
+                                                <td class="itemphoto">
+                                                    <div class="bx_ordercart_photo_container">
+                                                        <a href="#"><div class="bx_ordercart_photo" style="background-image:url(files/basket-2-new.jpg)"></div></a>
+                                                    </div>
+                                                </td>
+                                                <td class="item">
+                                                    <h2 class="bx_ordercart_itemtitle"><a href="#">Кольцо с бриллиантом на заказ</a></h2>
+                                                    <div class="bx_ordercart_itemart">SN02538</div>
+                                                    <div class="bx_item_detail_scu_small_noadaptive">
+                                                        <span class="bx_item_section_name_gray">Цвет</span>
+                                                        <div class="bx_scu_scroller_container">
+                                                            <div class="bx_scu">
+                                                                <ul id="prop_COLOR_REF_88" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                    <li style="width:10%;" class="sku_prop bx_active" data-value-id="orangered" data-element="88" data-property="COLOR_REF">
+                                                                        <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-2.png)"></span></a>
+                                                                    </li>
+                                                                    <li style="width:10%;" class="sku_prop" data-value-id="redblue" data-element="88" data-property="COLOR_REF">
+                                                                        <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-1.png)"></span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bx_slide_left" onclick="leftScroll('COLOR_REF', 88, 2);"></div>
+                                                            <div class="bx_slide_right" onclick="rightScroll('COLOR_REF', 88, 2);"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bx_item_detail_size_small_noadaptive">
+                                                        <span class="bx_item_section_name_gray">Размер</span>
+                                                        <div class="bx_size_scroller_container">
+                                                            <div class="bx_size">
+                                                                <ul id="prop_SIZES_CLOTHES_88" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                    <li style="width:10%;" class="sku_prop bx_active" data-value-id="16" data-element="88" data-property="SIZES_CLOTHES">
+                                                                        <a href="javascript:void(0)" class="cnt">16</a>
+                                                                    </li>
+                                                                    <li style="width:10%;" class="sku_prop" data-value-id="16,5" data-element="88" data-property="SIZES_CLOTHES">
+                                                                        <a href="javascript:void(0)" class="cnt">16,5</a>
+                                                                    </li>
+                                                                    <li style="width:10%;" class="sku_prop" data-value-id="17" data-element="88" data-property="SIZES_CLOTHES">
+                                                                        <a href="javascript:void(0)" class="cnt">17</a>
+                                                                    </li>
+                                                                    <li style="width:10%;" class="sku_prop" data-value-id="17,5" data-element="88" data-property="SIZES_CLOTHES">
+                                                                        <a href="javascript:void(0)" class="cnt">17,5</a>
+                                                                    </li>
+                                                                    <li style="width:10%;" class="sku_prop" data-value-id="18" data-element="88" data-property="SIZES_CLOTHES">
+                                                                        <a href="javascript:void(0)" class="cnt">18</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bx_slide_left" onclick="leftScroll('SIZES_CLOTHES', 88, 5);"></div>
+                                                            <div class="bx_slide_right" onclick="rightScroll('SIZES_CLOTHES', 88, 5);"></div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="custom">
+                                                    <span>Количество:</span>
+                                                    <div class="centered">
+                                                        <table class="counter" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input size="3" id="QUANTITY_INPUT_88" name="QUANTITY_INPUT_88" maxlength="18" min="0" max="100" step="0" style="max-width: 50px" value="1" onchange="updateQuantity('QUANTITY_INPUT_88', '88', 0, false)" type="text">
+                                                                    </td>
+                                                                    <td id="basket_quantity_control">
+                                                                        <div class="basket_quantity_control">
+                                                                            <a href="javascript:void(0);" class="plus" onclick="setQuantity(88, 1, 'up', false);"></a>
+                                                                            <a href="javascript:void(0);" class="minus" onclick="setQuantity(88, 1, 'down', false);"></a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="text-align: left">шт</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <input id="QUANTITY_88" name="QUANTITY_88" value="1" type="hidden">
+                                                </td>
+                                                <td class="custom">
+                                                    <span>Сумма:</span>
+                                                    <div id="sum_88">15 200 <span>&#8381;</span></div>
+                                                </td>
+                                                <td class="control">
+                                                    <a href="/personal/cart/?basketAction=delete&amp;id=88">Удалить</a><br>
+                                                    <a href="/personal/cart/?basketAction=delay&amp;id=88">Отложить</a>
+                                                </td>
+                                                <td class="margin"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <!-- basket row END -->
 
-                                <!-- basket row -->
-                                <div class="basket-row">
-                                    <div class="basket-photo"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
-                                    <div class="basket-text">
-                                        <div class="basket-title"><a href="#">Кольцо с бриллиантом на заказ</a></div>
-                                        <div class="basket-art">SN02538</div>
-                                        <div class="basket-size">Размер 17,5</div>
+                                <div class="bx_ordercart_order_pay">
+                                    <div class="bx_ordercart_order_pay_right">
+                                        <table class="bx_ordercart_order_sum">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Товаров на сумму:</td>
+                                                    <td id="allSum_wVAT_FORMATED">20 400 <span>&#8381;</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Скидка:</td>
+                                                    <td id="allSum_wVAT_FORMATED">1 000 <span>&#8381;</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fwb">Итого:</td>
+                                                    <td class="fwb" id="allSum_FORMATED">19&nbsp;400&nbsp;<span>&#8381;</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="clear:both;"></div>
                                     </div>
-                                    <div class="basket-row-count">
-                                        <div class="form-input">
-                                            <input type="text" name="count[]" value="1" step="1" min="1" />
-                                            <a class="plus" href="#"></a>
-                                            <a class="minus" href="#"></a>
-                                        </div>
+                                    <div style="clear:both;"></div>
+                                    <div class="bx_ordercart_order_pay_center">
+                                        <a href="javascript:void(0)" onclick="checkOut();" class="checkout">Оформить заказ</a>
                                     </div>
-                                    <div class="basket-row-price"><span>15 200</span> &#8381;</div>
-                                    <div class="basket-delete"><a href="#"></a></div>
                                 </div>
-                                <!-- basket row END -->
-
-                                <div class="basket-ctrl">
-                                    <div class="form-submit"><input type="submit" value="Оформить заказ" class="btn-2" /></div>
-                                    <div class="basket-ctrl-summ"><strong>Итого: 17 140</strong> &#8381;</div>
-                                </div>
-
-                            </form>
+                            </div>
                         </div>
-                        <!-- basket END -->
 
                     </div>
                 </div>
