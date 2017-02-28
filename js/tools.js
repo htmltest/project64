@@ -107,6 +107,23 @@ $(document).ready(function() {
         });
         e.preventDefault();
     });
+    
+    $('.listInCart').click(function(e) {
+        var curForm = $(this).parent();
+        $.ajax({
+            type: 'POST',
+            url: '/local/ajax/store/addtobasket.php',
+            data: {desc: $(this).data('desc'),product: $(this).data('product'),sizeID: $(this).data('sizeid') },
+            dataType: 'html',
+            cache: false
+        }).done(function(html) {
+            if ($('.window').length > 0) {
+                windowClose();
+            }
+            windowOpen(html);
+        });
+        e.preventDefault();
+    });    
 
     $('body').on('click', '.product-shops-item', function() {
         $('.product-shops-item.open').removeClass('open');
@@ -437,20 +454,6 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('.order-tabs-menu-item label input').change(function() {
-        var curItem = $(this).parent().parent();
-        var curTabs = curItem.parent().parent();
-        var curIndex = curTabs.find('.order-tabs-menu-item').index(curItem);
-        curTabs.find('.order-tab.active').removeClass('active');
-        curTabs.find('.order-tab').eq(curIndex).addClass('active');
-    });
-
-    $('.order-comment-link a').click(function(e) {
-        $('.order-comment-link').hide();
-        $('.order-comment').css({'display': 'block'});
-        e.preventDefault();
-    });
-
 });
 
 $(window).on('resize', function() {
@@ -485,13 +488,33 @@ function initForm(curForm) {
         curField.removeClass('error');
     });
 
-    curForm.validate({
+    if (curForm.parent().hasClass('subscribe')) {
+            curForm.validate({
+                submitHandler: function(form, validatorcalc) {
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: $(form).serialize(),
+                        dataType: 'html',
+                        cache: false
+                    }).done(function(html) {
+                        if ($('.window').length > 0) {
+                            windowClose();
+                        }
+                        windowOpen(html);
+                    });
+                }
+            });
+        } else{
+        
+        curForm.validate({
         ignore: '',
         invalidHandler: function(form, validatorcalc) {
             validatorcalc.showErrors();
             checkErrors();
         }
     });
+  }
 }
 
 function checkErrors() {
