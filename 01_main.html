@@ -33,7 +33,9 @@
                 <div class="top-inner">
                     <a href="#" class="top-sale">Распродажа</a>
                     <a href="#" class="top-gift"><span>Идеи для подарков</span><span>Подарки</span></a>
-                    <a href="#" class="top-cabinet">Личный кабинет</a>
+                    <div class="top-cabinet">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+                    </div>
                 </div>
             </div>
             <!-- top END -->
@@ -684,11 +686,6 @@
                         <div class="catalogue-recommend">
 
                             <div class="recommend-menu">
-                                <ul>
-                                    <li class="active"><a href="#">Новинки</a></li>
-                                    <li><a href="#">Хиты продаж</a></li>
-                                    <li><a href="#">Вы смотрели</a></li>
-                                </ul>
                                 <a href="#" class="recommend-menu-prev"></a>
                                 <a href="#" class="recommend-menu-next"></a>
                             </div>
@@ -697,7 +694,7 @@
                             <div class="recommend-tabs">
 
                                 <!-- recommend tab -->
-                                <div class="recommend-tab active">
+                                <div class="recommend-tab active" data-title="Новинки">
                                     <!-- catalogue list -->
                                     <div class="catalogue-list catalogue-wishlist">
 
@@ -1005,7 +1002,7 @@
                                 <!-- recommend tab END -->
 
                                 <!-- recommend tab -->
-                                <div class="recommend-tab">
+                                <div class="recommend-tab" data-title="Хиты продаж">
                                     <!-- catalogue list -->
                                     <div class="catalogue-list catalogue-wishlist">
 
@@ -1117,7 +1114,7 @@
                                 <!-- recommend tab END -->
 
                                 <!-- recommend tab -->
-                                <div class="recommend-tab">
+                                <div class="recommend-tab" data-title="Вы смотрели">
                                     <!-- catalogue list -->
                                     <div class="catalogue-list catalogue-wishlist">
 

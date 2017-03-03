@@ -33,7 +33,9 @@
                 <div class="top-inner">
                     <a href="#" class="top-sale">Распродажа</a>
                     <a href="#" class="top-gift"><span>Идеи для подарков</span><span>Подарки</span></a>
-                    <a href="#" class="top-cabinet">Личный кабинет</a>
+                    <div class="top-cabinet">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+                    </div>
                 </div>
             </div>
             <!-- top END -->
@@ -515,7 +517,7 @@
 
                                                     applyElementOffset: function() {
                                                         this._$element.css({
-                                                            left: -102,
+                                                            left: -157,
                                                             top: 15
                                                     });
                                                 },
@@ -555,13 +557,15 @@
                                             $('.product-shops-item').each(function() {
                                                 var curItem = $(this);
                                                 var curIndex = $('.product-shops-item').index(curItem);
+                                                var curHTML = curItem.html();
+                                                var newHTML = $(curHTML);
+                                                newHTML.find('.contacts-item-inner-photo').remove();
                                                 var myPlacemark = new ymaps.Placemark([curItem.data('coord1'), curItem.data('coord2')], {
                                                     hintContent: curItem.data('title'),
                                                     balloonID: i,
-                                                    balloonContent: curItem.html()
+                                                    balloonContent: newHTML.html()
                                                 }, {
                                                     balloonShadow: false,
-                                                    balloonPane: 'outerBalloon',
                                                     balloonLayout: MyBalloonLayout,
                                                     balloonContentLayout: MyBalloonContentLayout,
                                                     hideIconOnBalloonOpen: false,

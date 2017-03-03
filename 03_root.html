@@ -33,7 +33,9 @@
                 <div class="top-inner">
                     <a href="#" class="top-sale">Распродажа</a>
                     <a href="#" class="top-gift"><span>Идеи для подарков</span><span>Подарки</span></a>
-                    <a href="#" class="top-cabinet">Личный кабинет</a>
+                    <div class="top-cabinet">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+                    </div>
                 </div>
             </div>
             <!-- top END -->
@@ -328,448 +330,49 @@
             <!-- container -->
             <div class="container">
 
-                <!-- side -->
-                <div class="side">
-
-                    <!-- catalogue menu -->
-                    <div class="catalogue-menu">
-                        <ul>
-                            <li class="selected"><a href="#">новинки</a></li>
-                            <li class="selected"><a href="#">распродажА</a></li>
-                            <li><a href="#">Серьги</a></li>
-                            <li><a href="#">Кольца</a></li>
-                            <li><a href="#">Браслеты</a></li>
-                            <li>
-                                <a href="#">Украшения для волос</a>
-                                <a href="#" class="catalogue-menu-sublink"></a>
-                                <ul>
-                                    <li><a href="#">Диадемы</a></li>
-                                    <li><a href="#">Короны</a></li>
-                                    <li><a href="#">Гребни</a></li>
-                                    <li><a href="#">Тики</a></li>
-                                    <li><a href="#">Заколки</a></li>
-                                    <li><a href="#">Шпильки</a></li>
-                                    <li><a href="#">Ободки</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Украшения на шею</a>
-                                <a href="#" class="catalogue-menu-sublink"></a>
-                                <ul>
-                                    <li><a href="#">Диадемы</a></li>
-                                    <li><a href="#">Короны</a></li>
-                                    <li><a href="#">Гребни</a></li>
-                                    <li><a href="#">Тики</a></li>
-                                    <li><a href="#">Заколки</a></li>
-                                    <li><a href="#">Шпильки</a></li>
-                                    <li><a href="#">Ободки</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Для невесты</a>
-                                <a href="#" class="catalogue-menu-sublink"></a>
-                                <ul>
-                                    <li><a href="#">Диадемы</a></li>
-                                    <li><a href="#">Короны</a></li>
-                                    <li><a href="#">Гребни</a></li>
-                                    <li><a href="#">Тики</a></li>
-                                    <li><a href="#">Заколки</a></li>
-                                    <li><a href="#">Шпильки</a></li>
-                                    <li><a href="#">Ободки</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Клатчи</a></li>
-                            <li><a href="#">Броши</a></li>
-                            <li><a href="#">Часы</a></li>
-                            <li><a href="#">Ручки</a></li>
-                            <li><a href="#">Запонки</a></li>
-                        </ul>
-                    </div>
-                    <!-- catalogue menu END -->
-
-                    <!-- bx filter -->
-                    <div class="bx-filter bx-green ">
-                        <div class="bx-filter-section container-fluid">
-                            <div class="row"><div class="col-lg-12 bx-filter-title">Подбор параметров</div></div>
-                            <form class="smartfilter" method="get" action="/catalog/shoes/index.php" name="_form">
-                                <input type="hidden" value="Y" id="bitrix_include_areas" name="bitrix_include_areas">
-                                <div class="row">
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef"></span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Цена <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="до 2 500 &#8381;" class="bx-filter-param-text">до 2 500 <em>&#8381;</em></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="2 500 - 5 000 &#8381;" class="bx-filter-param-text">2 500 - 5 000 <em>&#8381;</em></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="5 000 - 10 000 &#8381;" class="bx-filter-param-text">5 000 - 10 000 <em>&#8381;</em></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="от 10 000 &#8381;" class="bx-filter-param-text">от 10 000 <em>&#8381;</em></span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef">
-                                            <div style="display: inline-block;" id="modef" class="bx-filter-popup-result right">
-                                                Выбрано:
-                                                <span id="modef_num">7</span>
-                                                <span class="arrow"></span>
-                                                <br>
-                                                <a target="" href="/catalog/shoes/filter/sizes_shoes-is-bcf799ba1361be1e5c3c8a38aac331d3/apply/">Показать</a>
-                                            </div>
-                                        </span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Тип изделия <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y" checked="checked">
-                                                            <span title="Все" class="bx-filter-param-text">Все</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Серьги гвоздики" class="bx-filter-param-text">Серьги гвоздики</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Длинные серьги" class="bx-filter-param-text">Длинные серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Крупные серьги" class="bx-filter-param-text">Крупные серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Круглые серьги" class="bx-filter-param-text">Круглые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Серьги кольца" class="bx-filter-param-text">Серьги кольца</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Серьги кисточки" class="bx-filter-param-text">Серьги кисточки</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Серьги клипсы" class="bx-filter-param-text">Серьги клипсы</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef"></span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Цвет <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Белые серьги" class="bx-filter-param-text">Белые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Золотые серьги" class="bx-filter-param-text">Золотые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Черные серьги" class="bx-filter-param-text">Черные серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Зеленые серьги" class="bx-filter-param-text">Зеленые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Синие серьги" class="bx-filter-param-text">Синие серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Розовые серьги" class="bx-filter-param-text">Розовые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Фиолетовые серьги" class="bx-filter-param-text">Фиолетовые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Коричневые серьги" class="bx-filter-param-text">Коричневые серьги</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef"></span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Вставка <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Фианиты" class="bx-filter-param-text">Фианиты</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Кристаллы" class="bx-filter-param-text">Кристаллы</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под жемчуг" class="bx-filter-param-text">Под жемчуг</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под бриллиант" class="bx-filter-param-text">Под бриллиант</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под изумруд" class="bx-filter-param-text">Под изумруд</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под сапфир" class="bx-filter-param-text">Под сапфир</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под топаз" class="bx-filter-param-text">Под топаз</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Под аметист" class="bx-filter-param-text">Под аметист</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Без вставок" class="bx-filter-param-text">Без вставок</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef"></span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Материал <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Серебро 925" class="bx-filter-param-text">Серебро 925</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="Бижутерный сплав" class="bx-filter-param-text">Бижутерный сплав</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
-                                        <span class="bx-filter-container-modef"></span>
-                                        <div class="bx-filter-parameters-box-title"><span class="bx-filter-parameters-box-hint">Длина <i class="fa fa-angle-up" data-role="prop_angle"></i></span></div>
-                                        <div data-role="bx_filter_block" class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y" checked="checked">
-                                                            <span title="Менее 2,5 см" class="bx-filter-param-text">Менее 2,5 см</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="от 2,5 до 5 см" class="bx-filter-param-text">от 2,5 до 5 см</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label class="bx-filter-param-label ">
-                                                        <span class="bx-filter-input-checkbox">
-                                                            <input type="checkbox" name="arrFilter_10_1007824416" value="Y">
-                                                            <span title="более 5 см" class="bx-filter-param-text">более 5 см</span>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 bx-filter-button-box">
-                                        <div class="bx-filter-block">
-                                            <div class="bx-filter-parameters-box-container">
-                                                <input type="button" value="Показать" name="set_filter" id="set_filter" class="btn btn-themes">
-                                                <input type="button" value="Сбросить" name="del_filter" id="del_filter" class="btn btn-link">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clb"></div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- bx filter END -->
-                </div>
-                <!-- side END -->
-
                 <!-- content -->
                 <div class="content">
                     <div class="content-wrap">
 
-                        <div class="side-mobile-link"><a href="#"><span>фильтр</span><span>свернуть</span></a></div>
-
                         <h1>Каталог ювелирной бижутерии</h1>
 
-                        <!-- catalogue sections -->
-                        <div class="catalogue-sections">
+                        <!-- catalogue others -->
+                        <div class="catalogue-others catalogue-others-root">
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-1">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-1.png" alt="" /><img src="images/catalogue-section-1-tablet.jpg" alt="" /><img src="images/main-section-1-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">Для невесты</a></div>
-                                    <div class="catalogue-section-list">
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Новинки</div>
+                                        <div class="catalogue-other-descr">ARBATA — это уникальное соединение двух культур. Компания разрабатывает ювелирные изделия, объединяя передовые швейцарские технологии и точность с российским духом</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- catalogue other END -->
+
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Распродажа</div>
+                                        <div class="catalogue-other-descr">Ювелиры ARBATA сочетают современные технологии и традиционный ручной труд. Художники разрабатывают украшения, учитывая мировые тенденции и индивидуальные предпочтения.</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- catalogue other END -->
+
+                        </div>
+                        <!-- catalogue others END -->
+
+                        <!-- main sections -->
+                        <div class="main-sections">
+
+                            <!-- main section -->
+                            <div class="main-section main-section-1">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-1.png" alt="" /><img src="images/main-section-1-tablet.png" alt="" /><img src="images/main-section-1-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">Для невесты</a></div>
+                                    <div class="main-section-list">
                                         <a href="#">Серьги пусеты</a>,
                                         <a href="#">Серьги-гвоздики</a>,
                                         <a href="#">Длинные серьги</a>,
@@ -777,16 +380,44 @@
                                         <a href="#">Крупные серьги</a>,
                                         ...
                                     </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                                <li><a href="#">Под аметист</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- catalogue section END -->
+                            <!-- main section END -->
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-2">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-2.jpg" alt="" /><img src="images/catalogue-section-2-tablet.jpg" alt="" /><img src="images/main-section-2-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">Кольца</a></div>
-                                    <div class="catalogue-section-list">
+                            <!-- main section -->
+                            <div class="main-section main-section-2">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-2.jpg" alt="" /><img src="images/main-section-2-tablet.jpg" alt="" /><img src="images/main-section-2-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">Кольца</a></div>
+                                    <div class="main-section-list">
                                         <a href="#">Серьги пусеты</a>,
                                         <a href="#">Серьги-гвоздики</a>,
                                         <a href="#">Длинные серьги</a>,
@@ -794,16 +425,44 @@
                                         <a href="#">Крупные серьги</a>,
                                         ...
                                     </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                                <li><a href="#">Под аметист</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- catalogue section END -->
+                            <!-- main section END -->
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-3.jpg" alt="" /><img src="images/catalogue-section-3-tablet.jpg" alt="" /><img src="images/main-section-3-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">Браслеты</a></div>
-                                    <div class="catalogue-section-list">
+                            <!-- main section -->
+                            <div class="main-section main-section-3">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-3.jpg" alt="" /><img src="images/main-section-3-tablet.jpg" alt="" /><img src="images/main-section-3-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">Браслеты</a></div>
+                                    <div class="main-section-list">
                                         <a href="#">Серьги пусеты</a>,
                                         <a href="#">Серьги-гвоздики</a>,
                                         <a href="#">Длинные серьги</a>,
@@ -811,16 +470,44 @@
                                         <a href="#">Крупные серьги</a>
                                         ...
                                     </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                                <li><a href="#">Под аметист</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- catalogue section END -->
+                            <!-- main section END -->
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-4.jpg" alt="" /><img src="images/catalogue-section-4-tablet.jpg" alt="" /><img src="images/main-section-4-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">Серьги</a></div>
-                                    <div class="catalogue-section-list">
+                            <!-- main section -->
+                            <div class="main-section main-section-3">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-4.jpg" alt="" /><img src="images/main-section-4-tablet.jpg" alt="" /><img src="images/main-section-4-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">Серьги</a></div>
+                                    <div class="main-section-list">
                                         <a href="#">Серьги гвоздики</a>,
                                         <a href="#">Длинные серьги</a>,
                                         <a href="#">Крупные серьги</a>,
@@ -828,277 +515,259 @@
                                         <a href="#">Серьги кисточки</a>
                                         ...
                                     </div>
-                                </div>
-                            </div>
-                            <!-- catalogue section END -->
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-5.jpg" alt="" /><img src="images/catalogue-section-5-tablet.jpg" alt="" /><img src="images/main-section-5-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">на шею</a></div>
-                                    <div class="catalogue-section-list">
-                                        <a href="#">Серьги пусеты</a>,
-                                        <a href="#">Серьги-гвоздики</a>,
-                                        <a href="#">Длинные серьги</a>,
-                                        <a href="#">Серьги-кольца</a>,
-                                        ...
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                                <li><a href="#">Под аметист</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- catalogue section END -->
+                            <!-- main section END -->
 
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-6.jpg" alt="" /><img src="images/catalogue-section-6-tablet.jpg" alt="" /><img src="images/main-section-6-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">для волос</a></div>
-                                    <div class="catalogue-section-list">
-                                        <a href="#">Серьги пусеты</a>,
-                                        <a href="#">Серьги-гвоздики</a>,
-                                        <a href="#">Длинные серьги</a>,
-                                        <a href="#">Серьги-кольца</a>,
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- catalogue section END -->
-
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"><a href="#"><img src="images/catalogue-section-7.jpg" alt="" /><img src="images/catalogue-section-7-tablet.jpg" alt="" /><img src="images/main-section-7-mobile.jpg" alt="" /></a></div>
-                                    <div class="catalogue-section-title"><a href="#">Клатчи</a></div>
-                                    <div class="catalogue-section-list">
-                                        <a href="#">Серьги пусеты</a>,
-                                        <a href="#">Серьги-гвоздики</a>,
-                                        <a href="#">Длинные серьги</a>,
-                                        <a href="#">Серьги-кольца</a>,
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- catalogue section END -->
-
-                            <!-- catalogue section -->
-                            <div class="catalogue-section catalogue-section-3 catalogue-section-other">
-                                <div class="catalogue-section-inner">
-                                    <div class="catalogue-section-photo"></div>
-                                    <div class="catalogue-section-title"><a href="#">Другое</a></div>
-                                    <div class="catalogue-section-list">
+                            <!-- main section -->
+                            <div class="main-section main-section-4">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-5.jpg" alt="" /><img src="images/main-section-5-tablet.jpg" alt="" /><img src="images/main-section-5-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">на шею</a></div>
+                                    <div class="main-section-list">
                                         <a href="#">Серьги пусеты</a>,
                                         <a href="#">Серьги-гвоздики</a>,
                                         <a href="#">Длинные серьги</a>,
                                         <a href="#">Серьги-кольца</a>,
                                     </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- catalogue section END -->
+                            <!-- main section END -->
+
+                            <!-- main section -->
+                            <div class="main-section main-section-4">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-6.jpg" alt="" /><img src="images/main-section-6-tablet.jpg" alt="" /><img src="images/main-section-6-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">для волос</a></div>
+                                    <div class="main-section-list">
+                                        <a href="#">Серьги пусеты</a>,
+                                        <a href="#">Серьги-гвоздики</a>,
+                                        <a href="#">Длинные серьги</a>,
+                                        <a href="#">Серьги-кольца</a>,
+                                    </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main section END -->
+
+                            <!-- main section -->
+                            <div class="main-section main-section-4 main-section-4-right">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"><a href="#"><img src="images/main-section-7.jpg" alt="" /><img src="images/main-section-7-tablet.jpg" alt="" /><img src="images/main-section-7-mobile.jpg" alt="" /></a></div>
+                                    <div class="main-section-title"><a href="#">Клатчи</a></div>
+                                    <div class="main-section-list">
+                                        <a href="#">Серьги пусеты</a>,
+                                        <a href="#">Серьги-гвоздики</a>,
+                                        <a href="#">Длинные серьги</a>,
+                                        <a href="#">Серьги-кольца</a>,
+                                    </div>
+
+                                    <div class="main-section-sub">
+                                        <div class="main-section-sub-col">
+                                            <div>Тип изделия</div>
+                                            <ul>
+                                                <li><a href="#">Серьги гвоздики</a></li>
+                                                <li><a href="#">Длинные серьги</a></li>
+                                                <li><a href="#">Крупные серьги</a></li>
+                                                <li><a href="#">Круглые серьги</a></li>
+                                                <li><a href="#">Серьги кисточки</a></li>
+                                                <li><a href="#">Серьги кольца</a></li>
+                                                <li><a href="#">Серьги клипсы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-section-sub-col">
+                                            <div>Вставка</div>
+                                            <ul>
+                                                <li><a href="#">Фианиты</a></li>
+                                                <li><a href="#">Кристаллы</a></li>
+                                                <li><a href="#">Под жемчуг</a></li>
+                                                <li><a href="#">Под бриллиант</a></li>
+                                                <li><a href="#">Под изумруд</a></li>
+                                                <li><a href="#">Под сапфир</a></li>
+                                                <li><a href="#">Под топаз</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main section END -->
+
+                            <!-- main section -->
+                            <div class="main-section main-section-4 main-section-other">
+                                <div class="main-section-inner">
+                                    <div class="main-section-photo"></div>
+                                    <div class="main-section-title"><a href="#">Другое</a></div>
+                                    <div class="main-section-list">
+                                        <a href="#">Серьги пусеты</a>,
+                                        <a href="#">Серьги-гвоздики</a>,
+                                        <a href="#">Длинные серьги</a>,
+                                        <a href="#">Серьги-кольца</a>,
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main section END -->
 
                         </div>
-                        <!-- catalogue sections END -->
+                        <!-- main sections END -->
 
-                        <!-- catalogue ctrl -->
-                        <div class="catalogue-ctrl">
-                            <div class="catalogue-params">
-                                <div class="catalogue-param">Все серьги<a href="#"></a></div>
-                                <div class="catalogue-param">Менее 2,5 см<a href="#"></a></div>
-                            </div>
-                            <div class="catalogue-sort">
-                                <form action="#" method="post">
-                                    <div class="form-select">
-                                        <select name="catalogue-sort">
-                                            <option value="1">По популярности</option>
-                                            <option value="2">По цене</option>
-                                            <option value="3">По названию</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- catalogue ctrl END -->
+                        <!-- catalogue others -->
+                        <div class="catalogue-others catalogue-others-root catalogue-others-root-seo">
 
-                        <!-- catalogue list -->
-                        <div class="catalogue-list">
-
-                            <!-- catalogue item -->
-                            <div class="catalogue-item in-favorite">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-01.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Длинные серьги с&nbsp;финифтью «Бабочка»</a></div>
-                                        <div class="catalogue-item-code">BE807</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Бижутерия с фионитом</div>
+                                        <div class="catalogue-other-descr">Композиция выглядит весьма объемно фактурно и богато, благодаря сочетанию</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="catalogue-item-event catalogue-item-event-mini">-10%</div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo"><img src="images/catalogue-section-8.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
-                            <!-- catalogue item -->
-                            <div class="catalogue-item in-cart">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-02.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги длинные из золота с фианитами</a></div>
-                                        <div class="catalogue-item-code">SE12261b</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Длинные Серьги</div>
+                                        <div class="catalogue-other-descr">Удлиненная форма придает серьгам торжественный и одновременно</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="catalogue-item-event">Новинка</div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo"><img src="images/catalogue-section-9.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-03.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги-продёвки со&nbsp;снегирями</a></div>
-                                        <div class="catalogue-item-code">SN02538</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Серьги Гвоздики</div>
+                                        <div class="catalogue-other-descr">Удлиненная форма придает серьгам торжественный и одновременно</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="catalogue-item-event">-50%</div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo"><img src="images/catalogue-section-10.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-04.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги длинные из золота с фианитами</a></div>
-                                        <div class="catalogue-item-code">BE807</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Серьги-подвески</div>
+                                        <div class="catalogue-other-descr">Композиция выглядит весьма объемно фактурно и богато, благодаря сочетанию</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo"><img src="images/catalogue-section-11.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-05.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги длинные из серебра</a></div>
-                                        <div class="catalogue-item-code">SE12261b</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Кулоны с фионитами</div>
+                                        <div class="catalogue-other-descr">Удлиненная форма придает серьгам торжественный и одновременно</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo" style="vertical-align:top"><img src="images/catalogue-section-12.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-06.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Стилизованные под&nbsp;Гжель серьги</a></div>
-                                        <div class="catalogue-item-code">SN02538</div>
+                            <!-- catalogue other -->
+                            <div class="catalogue-other">
+                                <a href="#">
+                                    <div class="catalogue-other-text">
+                                        <div class="catalogue-other-title">Кулоны с жемчугом</div>
+                                        <div class="catalogue-other-descr">Удлиненная форма придает серьгам торжественный и одновременно</div>
                                     </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="catalogue-item-event catalogue-item-event-mini">-10%</div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
+                                    <div class="catalogue-other-photo" style="vertical-align:top"><img src="images/catalogue-section-13.jpg" alt="" /></div>
+                                </a>
                             </div>
-                            <!-- catalogue item END -->
-
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-07.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги в стиле русского народного фольклора</a></div>
-                                        <div class="catalogue-item-code">BE807</div>
-                                    </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="catalogue-item-event">Новинка</div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
-                            </div>
-                            <!-- catalogue item END -->
-
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-08.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги «Перо павлина»</a></div>
-                                        <div class="catalogue-item-code">SE12261b</div>
-                                    </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
-                            </div>
-                            <!-- catalogue item END -->
-
-                            <!-- catalogue item -->
-                            <div class="catalogue-item">
-                                <div class="catalogue-item-inner">
-                                    <div class="catalogue-item-photo"><a href="#"><img src="files/catalogue-09.jpg" alt="" /></a></div>
-                                    <div class="catalogue-item-text">
-                                        <div class="catalogue-item-name"><a href="#">Серьги из золота</a></div>
-                                        <div class="catalogue-item-code">SN02538</div>
-                                    </div>
-                                    <div class="catalogue-item-ctrl">
-                                        <div class="catalogue-item-price">5200 <span>&#8381;</span></div>
-                                        <div class="catalogue-item-cart">
-                                            <a href="#"><span>В корзину</span><span>В корзине</span></a>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="catalogue-item-favorite"><span>в избранное</span><span>убрать из избранного</span></a>
-                                </div>
-                            </div>
-                            <!-- catalogue item END -->
+                            <!-- catalogue other END -->
 
                         </div>
-                        <!-- catalogue list END -->
-
-                        <div class="catalogue-more"><a href="#" class="btn-1">Показать еще украшения</a></div>
+                        <!-- catalogue others END -->
 
                         <div class="catalogue-text">
                             <h2>Серьги от ARBATA</h2>
