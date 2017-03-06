@@ -1523,17 +1523,17 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 .info-block {position:relative; display:inline-block; vertical-align:middle; margin:-2px 0 0 6px}
 .info-link {font-size:12px; font-weight:normal; display:block; width:21px; height:21px; line-height:21px; background:#f02a2a; border-radius:11px; text-align:center; color:#fff}
 .info-block:hover .info-link {background:#cf0f0f; color:#fff}
-.info-block-content {display:none; position:absolute; left:44px; top:-29px; width:270px; background:#fff; z-index:999; border:1px solid #000; padding:28px 30px 30px 30px; box-shadow:0 0 13px rgba(0, 0, 0, .23)}
-.info-block-content:before {content:""; display:block; width:44px; height:70px; background:url(../images/blank.gif); position:absolute; left:-44px; top:0}
-.info-block-content:after {content:""; display:block; width:13px; height:23px; position:absolute; left:-13px; top:28px; background:url(../images/info-block-arrow.png)}
+.info-block-content {display:none; position:absolute; right:44px; top:-29px; width:270px; background:#fff; z-index:999; border:1px solid #000; padding:28px 30px 30px 30px; box-shadow:0 0 13px rgba(0, 0, 0, .23)}
+.info-block-content:before {content:""; display:block; width:44px; height:70px; background:url(../images/blank.gif); position:absolute; right:-44px; top:0}
+.info-block-content:after {content:""; display:block; width:13px; height:23px; position:absolute; right:-13px; top:28px; background:url(../images/info-block-arrow.png)}
 .info-block:hover .info-block-content {display:block}
 .info-block-title {font-weight:500; font-size:15px; line-height:20px; text-transform:uppercase; color:#000}
 .info-block-text {font-weight:100; font-size:14px; line-height:20px; text-transform:none; color:#000; padding:11px 0 0 0}
 
 @media (max-width:1199px) {
-    .info-block-content {left:-96px; top:35px; width:308px}
-    .info-block-content:before {width:100%; height:35px; left:0; top:-35px}
-    .info-block-content:after {width:23px; height:13px; left:95px; top:-13px; background:url(../images/info-block-arrow-tablet.png)}
+    .info-block-content {left:-96px; right:auto; top:35px; width:308px}
+    .info-block-content:before {width:100%; height:35px; left:0; right:auto; top:-35px}
+    .info-block-content:after {width:23px; height:13px; left:95px; right:auto; top:-13px; background:url(../images/info-block-arrow-tablet.png)}
 }
 
 .bx-soa-coupon-label {font-weight:500; font-size:15px; line-height:20px; text-transform:uppercase; color:#000}
