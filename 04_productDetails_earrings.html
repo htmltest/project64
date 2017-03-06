@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
         <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/cloudzoom/cloud-zoom.css" />
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
 
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
@@ -18,6 +20,8 @@
         <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
         <script src="js/jscrollpane/jquery.mousewheel.js"></script>
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/cloudzoom/cloud-zoom.1.0.3.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -342,13 +346,13 @@
                                 <div class="product-favorite"></div>
 
                                 <div class="product-photo-big">
-                                    <img src="files/product-big-1.jpg" alt="" />
+                                    <a href="files/product-max-1.jpg" class="cloud-zoom" rel="position:'right',showTitle:1,titleOpacity:0.5,lensOpacity:0.5,adjustX:10,adjustY:-4"><img src="files/product-big-1.jpg" alt="" /><span>Увеличить</span></a>
                                 </div>
                                 <div class="product-photo-preview">
                                     <ul>
-                                        <li class="active"><a href="files/product-big-1.jpg"><img src="files/product-preview-1.jpg" alt="" /></a></li>
-                                        <li><a href="files/product-big-2.jpg"><img src="files/product-preview-2.jpg" alt="" /></a></li>
-                                        <li><a href="files/product-big-3.jpg"><img src="files/product-preview-3.jpg" alt="" /></a></li>
+                                        <li class="active"><a href="files/product-big-1.jpg" rel="files/product-max-1.jpg"><img src="files/product-preview-1.jpg" alt="" /></a></li>
+                                        <li><a href="files/product-big-2.jpg" rel="files/product-max-2.jpg"><img src="files/product-preview-2.jpg" alt="" /></a></li>
+                                        <li><a href="files/product-big-3.jpg" rel="files/product-max-3.jpg"><img src="files/product-preview-3.jpg" alt="" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -603,7 +607,7 @@
                             <div class="recommend-tabs">
 
                                 <!-- recommend tab -->
-                                <div class="recommend-tab active" data-title="Вставка">
+                                <div class="recommend-tab" data-title="Вставка">
                                     <!-- catalogue list -->
                                     <div class="catalogue-list catalogue-wishlist">
 

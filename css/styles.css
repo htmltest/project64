@@ -194,7 +194,7 @@ label.error {display:block; color:#f02a2a; padding:9px 0 21px 6px}
 .top-inner a.top-gift {padding:0 15px 0 37px; margin:0 0 0 10px; background:url(../images/top-gift.png) no-repeat 15px center}
 .top-inner a:hover {background-color:#bc1e1e}
 .top-cabinet {float:right; position:relative; margin:0 -15px 0 0}
-.top-cabinet-link {display:block; padding:0 15px 0 38px; background:url(../images/top-cabinet.png) no-repeat 16px center; max-width:114px; white-space:nowrap; overflow:hidden; position:relative; text-overflow:ellipsis}
+.top-cabinet-link {display:block; padding:0 15px 0 38px; background:url(../images/top-cabinet.png) no-repeat 16px center; max-width:120px; white-space:nowrap; overflow:hidden; position:relative; text-overflow:ellipsis}
 .top-cabinet:hover .top-cabinet-link {background-color:#bc1e1e}
 .top-cabinet ul {display:none; position:absolute; left:0; top:100%; width:100%; margin:0; padding:0; list-style:none; z-index:99; background:#bc1e1e}
 .top-cabinet:hover ul {display:block}
@@ -446,6 +446,7 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 }
 
 .catalogue-menu {text-transform:uppercase; font-weight:bold; margin:6px 15px 0 15px}
+.catalogue-menu:after {content:""; display:block; width:70px; height:1px; background:#000; margin:30px 0 0 0}
 .catalogue-menu ul {margin:0}
 .catalogue-menu li {margin:0; padding:0; border-top:1px solid #f2f2f2; position:relative}
 .catalogue-menu li:first-child {border-top:none}
@@ -885,7 +886,9 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 }
 
 .product-photo-big {line-height:0; position:relative}
+.product-photo-big a {display:block; position:relative; text-decoration:none; color:#000; font-size:9px; font-weight:500; text-transform:uppercase}
 .product-photo-big img {width:100%}
+.product-photo-big a span {display:block; position:absolute; left:0; bottom:14px; padding:0 0 0 32px; line-height:18px; background:url(../images/product-photo-zoom.png) no-repeat left center}
 
 .product-photo-preview {margin:0 -15px; font-size:0; line-height:0; letter-spacing:-1px}
 .product-photo-preview ul {margin:0}
@@ -970,8 +973,9 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 
 .form-size {float:left; margin:0 0 0 14px}
 .form-size:first-child {margin:0}
-.form-size label {display:block; position:relative; width:50px; height:50px; cursor:pointer}
-.form-size label span {display:block; width:46px; height:46px; padding:1px; font-size:15px; line-height:46px; border:1px solid #e6e6e6; border-radius:25px; text-align:center}
+.form-size label {display:block; position:relative; width:50px; height:50px}
+.form-size label span {display:block; width:46px; height:46px; padding:1px; font-size:15px; line-height:46px; border:1px solid #cdcdcd; border-radius:25px; text-align:center; cursor:pointer}
+.form-size label input:disabled+span {border-color:#e7e7e7; color:#d4d4d4; cursor:default}
 .form-size label input {display:none}
 .form-size label input:checked+span {padding:0; border:2px solid #f02a2a}
 .product-order .form-field+.form-field+.btn-2 {clear:left; margin:45px 0 0 0; width:calc(50% - 5px)}
@@ -1849,6 +1853,8 @@ footer a:hover {text-decoration:none}
     .basket-window .basket-results {margin-left:-30px; margin-right:-30px}
 }
 
+.basket-window .basket-row:hover {border-color:#e5e5e5}
+
 .basket-window-close {width:370px; margin:36px auto 0 auto}
 
 @media (max-width:767px) {
@@ -2028,7 +2034,7 @@ footer a:hover {text-decoration:none}
 .bx-soa-item-img-block {display:table-cell; vertical-align:middle; width:70px; padding:0 0 0 20px}
 .bx-step-completed .bx-soa-item-img-block {padding:0}
 .bx-soa-item-img-block a {display:block; width:70px; height:70px}
-.bx-soa-item-imgcontainer {width:70px; height:70px; background-position:center; background-repeat:no-repeat}
+.bx-soa-item-imgcontainer {width:68px; height:68px; border:1px solid #e5e5e5; background-position:center; background-repeat:no-repeat}
 .bx-soa-item-content {display:table-cell; vertical-align:middle; padding:0 0 0 20px}
 .bx-soa-item-content .bx-scu-container .bx-soa-item-td-title {display:block; float:left; clear:left}
 .bx-soa-item-content .bx-scu-container .bx-soa-item-td-text {float:left; margin:0 0 0 5px}
@@ -2041,7 +2047,7 @@ footer a:hover {text-decoration:none}
 .bx-soa-more-btn .pull-left {float:left !important; border-radius:0 !important; background:transparent !important; margin:0 10px 0 0 !important; padding:0 !important; outline:none !important; width:170px !important; border:1px solid #ccc !important; text-decoration:none !important; height:50px !important; box-sizing:border-box !important; color:#000 !important; text-align:center !important; text-transform:uppercase !important; font:14px/48px MuseoSansCyrl, sans-serif !important; -webkit-appearance:none !important; cursor:pointer !important; transition:all .5s ease}
 .bx-soa-more-btn .pull-left:hover {border-color:#000 !important; color:#000 !important; text-decoration:none !important}
 .bx-soa-more-btn .pull-left:active {border-color:#f02a2a !important}
-.bx-soa-more-btn .pull-right {float:left !important; border-radius:0 !important; background:#f02a2a !important; margin:0 10px 0 0 !important; padding:0 !important; outline:none !important; width:170px !important; border:none !important; text-decoration:none !important; height:50px !important; box-sizing:border-box !important; color:#fff !important; text-align:center !important; text-transform:uppercase !important; font:14px/50px MuseoSansCyrl, sans-serif !important; -webkit-appearance:none !important; cursor:pointer !important; transition:all .5s ease}
+.bx-soa-more-btn .pull-right {float:right !important; border-radius:0 !important; background:#f02a2a !important; margin:0 !important; padding:0 !important; outline:none !important; width:170px !important; border:none !important; text-decoration:none !important; height:50px !important; box-sizing:border-box !important; color:#fff !important; text-align:center !important; text-transform:uppercase !important; font:14px/50px MuseoSansCyrl, sans-serif !important; -webkit-appearance:none !important; cursor:pointer !important; transition:all .5s ease}
 .bx-soa-more-btn .pull-right:hover {background:#cf0f0f !important; color:#fff !important; text-decoration:none !important}
 .bx-soa-more-btn .pull-right:active {background:#910606 !important; color:#fff !important}
 
