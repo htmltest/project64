@@ -187,7 +187,7 @@
                 top:0,
                 left:0,
                 position:'absolute',
-                zIndex:998
+                zIndex:9
             });
             //////////////////////////////////////////////////////////////////////
             /* Do as little as possible in mousemove event to prevent slowdown. */
@@ -272,7 +272,7 @@
                         }
                 }
 
-                zoomDiv = appendTo.append(format('<div id="cloud-zoom-big" class="cloud-zoom-big" style="display:none;position:absolute;left:%0px;top:%1px;width:%2px;height:%3px;background-image:url(\'%4\');z-index:99;"></div>', xPos, yPos, w, h, zoomImage.src)).find(':last');
+                zoomDiv = appendTo.append(format('<div id="cloud-zoom-big" class="cloud-zoom-big" style="display:none;position:absolute;left:%0px;top:%1px;width:%2px;height:%3px;background-image:url(\'%4\');z-index:9;"></div>', xPos, yPos, w, h, zoomImage.src)).find(':last');
                 zoomDiv = $('.cloud-zoom-big',appendTo);
                 // Add the title from title tag.
                 if (sImg.attr('title') && opts.showTitle) {
@@ -290,7 +290,7 @@
                 ch = (sImg.outerHeight() / zoomImage.height) * zoomDiv.height();
 
                 // Attach mouse, initially invisible to prevent first frame glitch
-                lens = jWin.append(format("<div class = 'cloud-zoom-lens' style='display:none;z-index:98;position:absolute;width:%0px;height:%1px;'></div>", cw, ch)).find(':last');
+                lens = jWin.append(format("<div class = 'cloud-zoom-lens' style='display:none;z-index:9;position:absolute;width:%0px;height:%1px;'></div>", cw, ch)).find(':last');
                 lens = $('.cloud-zoom-lens',jWin);
                 $mouseTrap.css('cursor', lens.css('cursor'));
 
@@ -365,7 +365,7 @@
                 // Wrap an outer div around the link so we can attach things without them becoming part of the link.
                 // But not if wrap already exists.
                 if ($(this).parent().attr('id') != 'wrap') {
-                    $(this).wrap('<div id="wrap" style="top:0px;z-index:998;position:relative;"></div>');
+                    $(this).wrap('<div id="wrap" style="top:0px;position:relative;"></div>');
                 }
                 opts = $.extend({}, $.fn.CloudZoom.defaults, options);
                 opts = $.extend({}, opts, relOpts);

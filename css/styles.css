@@ -2143,7 +2143,12 @@ footer a:hover {text-decoration:none}
 
 .bx-ui-sls-quick-locations {display:none}
 
-.bx-ui-slider-part {display:none}
+.bx-ui-slider-part {display:block; position:absolute; top:100%}
+.bx-ui-slider-part.p1 {left:0}
+.bx-ui-slider-part.p2 {left:25%}
+.bx-ui-slider-part.p3 {left:50%}
+.bx-ui-slider-part.p4 {left:75%}
+.bx-ui-slider-part.p5 {left:100%}
 .bx-filter-parameters-box-container-block {float:left; width:68px; padding:7px 0 0 0}
 .bx-filter-parameters-box-container-block+.bx-filter-parameters-box-container-block {float:right; width:68px; padding:7px 0 0 0; margin:0 0 0 0}
 .bx-filter .bx-ft-sub {display:none}

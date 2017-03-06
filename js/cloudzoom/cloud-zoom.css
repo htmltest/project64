@@ -4,7 +4,7 @@
 	border: 4px solid #888;
 	margin:-4px;	/* Set this to minus the border thickness. */
 	background-color:#fff;	
-	cursor:move;		
+	cursor:pointer;		
 }
 
 /* This is for the title text. */
