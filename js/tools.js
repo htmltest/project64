@@ -505,6 +505,12 @@ $(document).ready(function() {
         curField.addClass('focus');
     });
 
+    $('.product-order-rings').each(function() {
+        if ($(this).find('.form-size').length > 0) {
+            $(this).addClass('product-order-rings-with-size');
+        }
+    });
+
 });
 
 $(window).on('resize', function() {
@@ -630,49 +636,6 @@ $(window).on('load resize', function() {
 
     $('.catalogue-list').each(function() {
         resizeCatalogue($(this));
-    });
-
-    $('.catalogue-list').each(function() {
-        var curList = $(this);
-        curList.find('.catalogue-item-photo').css({'min-height': 0 + 'px'});
-
-        curList.find('.catalogue-item-photo').each(function() {
-            var curBlock = $(this);
-            var curHeight = curBlock.height();
-            var curTop = curBlock.offset().top;
-
-            curList.find('.catalogue-item-photo').each(function() {
-                var otherBlock = $(this);
-                if (otherBlock.offset().top == curTop) {
-                    var newHeight = otherBlock.height();
-                    if (newHeight > curHeight) {
-                        curBlock.css({'min-height': newHeight + 'px', 'line-height': newHeight + 'px'});
-                    } else {
-                        otherBlock.css({'min-height': curHeight + 'px', 'line-height': newHeight + 'px'});
-                    }
-                }
-            });
-        });
-
-        curList.find('.catalogue-item-text').css({'min-height': 0 + 'px'});
-
-        curList.find('.catalogue-item-text').each(function() {
-            var curBlock = $(this);
-            var curHeight = curBlock.height();
-            var curTop = curBlock.offset().top;
-
-            curList.find('.catalogue-item-text').each(function() {
-                var otherBlock = $(this);
-                if (otherBlock.offset().top == curTop) {
-                    var newHeight = otherBlock.height();
-                    if (newHeight > curHeight) {
-                        curBlock.css({'min-height': newHeight + 'px'});
-                    } else {
-                        otherBlock.css({'min-height': curHeight + 'px'});
-                    }
-                }
-            });
-        });
     });
 
     $('.catalogue-text-wrap').each(function() {
