@@ -511,6 +511,16 @@ $(document).ready(function() {
         }
     });
 
+    $('.side').on('click', '.bx-filter-popup-result .close', function() {
+        $('.bx-filter-popup-result').hide();
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.bx-filter-popup-result').length == 0) {
+            $('.bx-filter-popup-result').hide();
+        }
+    });
+
 });
 
 $(window).on('resize', function() {
