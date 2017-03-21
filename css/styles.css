@@ -174,6 +174,18 @@ label.error {display:block; color:#f02a2a; padding:9px 0 21px 6px}
 .form-required {text-align:center}
 .form-required span {color:#f02a2a}
 
+.loading {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(255, 255, 255, .95)}
+.loading-text {position:absolute; left:0; top:50%; margin-top:-80px; width:100%; text-align:center; font-weight:bold; font-size:26px; line-height:26px; color:#000; background:url(../images/loading.gif) no-repeat center top; padding:134px 0 0 0; text-transform:uppercase}
+
+.message-success {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(255, 255, 255, .95)}
+.message-success-text {position:absolute; color:#000; left:0; top:50%; margin-top:-100px; width:100%; text-align:center; background:url(../images/success.png) no-repeat center top; padding:135px 0 0 0}
+.message-success-text span {font-weight:bold; font-size:26px; line-height:26px; color:#000; display:block; padding:0 0 11px 0; text-transform:uppercase}
+
+.message-error {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(255, 255, 255, .95)}
+.message-error-text {position:absolute; color:#000; left:0; top:50%; margin-top:-127px; width:100%; text-align:center; background:url(../images/error.png) no-repeat center top; padding:135px 0 0 0}
+.message-error-text span {font-weight:bold; font-size:26px; line-height:26px; color:#000; display:block; padding:0 0 9px 0; text-transform:uppercase}
+.message-error-back-link {text-decoration:none; font-weight:bold; font-size:15px; line-height:20px; text-transform:uppercase}
+
 .pager {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; padding:39px 0 6px 0}
 .pager a,
 .pager span {display:inline-block; vertical-align:top; width:38px; height:28px; margin:0 5px; border:1px solid #e5e5e5; text-align:center; color:#000; font-size:14px; line-height:28px; letter-spacing:0}

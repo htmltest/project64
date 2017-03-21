@@ -229,16 +229,12 @@ $(document).ready(function() {
     });
 
     $('.nav-main-link').click(function(e) {
-        $('html').toggleClass('nav-main-open');
         if ($('html').hasClass('nav-main-open')) {
-            var dpr = 1;
-            if (window.devicePixelRatio !== undefined) {
-                dpr = window.devicePixelRatio;
-            }
-
-            $('body').height($(window).height() * dpr);
+            $('html').removeClass('nav-main-open');
+            $(window).scrollTop($('body').data('scrollTop'));
         } else {
-            $('body').removeAttr('style');
+            $('body').data('scrollTop', $(window).scrollTop());
+            $('html').addClass('nav-main-open');
         }
         e.preventDefault();
     });
@@ -521,6 +517,11 @@ $(document).ready(function() {
         }
     });
 
+    $('body').on('click', '.message-error-back-link', function(e) {
+        $(this).parents().filter('.message-error').remove();
+        e.preventDefault();
+    });
+
 });
 
 $(window).on('resize', function() {
@@ -556,24 +557,40 @@ function initForm(curForm) {
     });
 
     if (curForm.parent().hasClass('subscribe')) {
-            curForm.validate({
-                submitHandler: function(form, validatorcalc) {
-                    $.ajax({
-                        type: 'POST',
-                        url: $(form).attr('action'),
-                        data: $(form).serialize(),
-                        dataType: 'html',
-                        cache: false
-                    }).done(function(html) {
-                        if ($('.window').length > 0) {
-                            windowClose();
-                        }
-                        windowOpen(html);
-                    });
-                }
-            });
-        } else{
-
+        curForm.validate({
+            submitHandler: function(form, validatorcalc) {
+                $.ajax({
+                    type: 'POST',
+                    url: $(form).attr('action'),
+                    data: $(form).serialize(),
+                    dataType: 'html',
+                    cache: false
+                }).done(function(html) {
+                    if ($('.window').length > 0) {
+                        windowClose();
+                    }
+                    windowOpen(html);
+                });
+            }
+        });
+    } else if (curForm.hasClass('ajaxForm')) {
+        curForm.validate({
+            ignore: '',
+            submitHandler: function(form, validatorcalc) {
+                $(form).append('<div class="loading"><div class="loading-text">Отправка данных</div></div>');
+                $.ajax({
+                    type: 'POST',
+                    url: $(form).attr('action'),
+                    data: $(form).serialize(),
+                    dataType: 'html',
+                    cache: false
+                }).done(function(html) {
+                    $(form).find('.loading').remove();
+                    $(form).append(html);
+                });
+            }
+        });
+    } else {
         curForm.validate({
         ignore: '',
         invalidHandler: function(form, validatorcalc) {
