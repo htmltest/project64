@@ -459,6 +459,28 @@ $(document).ready(function() {
         }
     });
 
+    $('.product-discount-personal-link').click(function(e) {
+        $('.product-discount-personal-window').show();
+        e.preventDefault();
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.product-discount-personal').length == 0) {
+            $('.product-discount-personal-window').hide();
+        }
+    });
+
+    $('body').bind('keyup', function(e) {
+        if (e.keyCode == 27) {
+            $('.product-discount-personal-window').hide();
+        }
+    });
+
+    $('.product-discount-personal-window-close').click(function(e) {
+        $('.product-discount-personal-window').hide();
+        e.preventDefault();
+    });
+
     $('body').on('click', '.selected-shop-link a', function(e) {
         $.ajax({
             type: 'POST',
