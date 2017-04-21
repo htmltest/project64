@@ -721,8 +721,8 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 .catalogue-item-photo {text-align:center; width:100%; min-height:248px; line-height:248px; position:relative; overflow:hidden}
 .catalogue-item-photo a {line-height:inherit}
 .catalogue-item-photo img {max-width:100%; vertical-align:middle}
-.catalogue-item-photo span {display:block; background:#fff; position:absolute; left:-9999px; top:-9999px; position:absolute; width:100%; height:100%; overflow:hidden; line-height:inherit}
-.catalogue-item-inner:hover .catalogue-item-photo span {left:0; top:0}
+.catalogue-item-photo span {display:block; background:#fff; position:absolute; left:0; top:0; position:absolute; width:100%; height:100%; overflow:hidden; line-height:inherit; opacity:0; transition:opacity .3s ease}
+.catalogue-item-inner:hover .catalogue-item-photo span {opacity:1}
 .catalogue-item-text {padding:20px 19px 34px 19px}
 .catalogue-item-name {font-size:14px; line-height:20px; letter-spacing:0; text-transform:uppercase; color:#4c4c4c}
 .catalogue-item-name a {color:#4c4c4c}
