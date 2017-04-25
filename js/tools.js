@@ -391,12 +391,18 @@ $(document).ready(function() {
 
     $('.nav-search-link').click(function(e) {
         $('.nav-search').toggleClass('open');
+        if ($('.nav-search').hasClass('open')) {
+            $('.nav-search-input input').focus();
+        } else {
+            $('.nav-search-input input').blur();
+        }
         e.preventDefault();
     });
 
     $(document).click(function(e) {
         if ($(e.target).parents().filter('.nav-search').length == 0) {
             $('.nav-search').removeClass('open');
+            $('.nav-search-input input').blur();
         }
     });
 
