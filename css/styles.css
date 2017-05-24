@@ -2449,3 +2449,41 @@ footer a:hover {text-decoration:none}
 }
 
 .errortext {display:block; margin:-20px 0; color:#f02a2a}
+
+.order-success:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.order-success-container {float:left; width:768px; border:1px solid #e6e6e6; position:relative; padding:0 0 10px 0}
+.order-success-container:before {content:""; display:block; position:absolute; left:0; top:0; bottom:0; width:248px; background:#fafafa}
+.order-success-info {float:left; width:248px; text-align:center; position:relative; background:url(../images/order-success.png) no-repeat center 39px; padding:177px 0 0 0}
+.order-success-info-title strong {font-weight:800}
+.order-success-info-text {font-size:15px; text-transform:uppercase; color:#73a52f; padding:21px 0 0 0}
+.order-success-wrap {margin:0 29px 0 299px; position:relative}
+.order-success-content {float:left; width:100%; padding:9px 0 0 0}
+.order-success-content dl {margin:0; padding:18px 0 31px 0}
+.order-success-content dl+dl {border-top:1px solid #e6e6e6}
+.order-success-content dl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.order-success-content dt {float:left; clear:left; opacity:.55; width:140px; padding:10px 0 0 0}
+.order-success-content dd {margin:0 0 0 170px; padding:10px 0 0 0}
+.order-success-content dl+dl dd {color:#727272}
+.order-success-content dd span {font-family:"PT Sans", sans-serif; font-weight:normal}
+.order-success-content dd p {margin:0; padding:0}
+.order-success-content dd p+p {margin:20px 0 0 0}
+
+.order-success-hint {float:right; width:310px; padding:39px 30px 41px 30px; background:#fafafa}
+.order-success-hint p {margin:0; padding:0}
+.order-success-hint p+p {margin:20px 0 0 0}
+
+@media (max-width:1199px) {
+    .order-success-container {float:none; width:auto}
+    .order-success-container:before {width:210px}
+    .order-success-container:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+    .order-success-info {width:210px}
+    .order-success-wrap {margin-left:259px}
+    .order-success-hint {float:none; width:auto; margin:30px 0 0 0}
+}
+
+@media (max-width:767px) {
+    .order-success-container:before {width:100%; bottom:auto; height:200px}
+    .order-success-info {float:none; width:auto; padding:0 0 0 200px; height:200px; background-position:49px 49px; text-align:left}
+    .order-success-info-title {padding:59px 0 0 0}
+    .order-success-wrap {margin-left:29px}
+}
